@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Escolha o seu Pokemón!"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivTerra"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivAgua"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivGelo"
+        app:layout_constraintTop_toTopOf="@+id/ivGelo"
+        app:srcCompat="@drawable/clefairy" />
+
+    <ImageView
+        android:id="@+id/ivAgua"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ivTerra"
+        app:layout_constraintTop_toTopOf="@+id/ivGelo"
+        app:srcCompat="@drawable/wartortle" />
+
+    <ImageView
+        android:id="@+id/ivGelo"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivTerra"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/dewong" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:text="Última jogada"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTerra" />
+
+    <TextView
+        android:id="@+id/tvVoce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Você"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/tvAndroid"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tvAndroid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tvVoce"
+        app:layout_constraintTop_toTopOf="@+id/tvVoce" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="185dp"
+        android:layout_height="32dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Você venceu"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivResultadotxt" />
+
+    <TextView
+        android:id="@+id/ivResultadotxt"
+        android:layout_width="69dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="Resultado"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivVoce" />
+
+    <ImageView
+        android:id="@+id/ivVoce"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvVoce"
+        app:layout_constraintStart_toStartOf="@+id/tvVoce"
+        app:layout_constraintTop_toBottomOf="@+id/tvVoce"
+        app:srcCompat="@drawable/clefairy" />
+
+    <ImageView
+        android:id="@+id/ivAndroid"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/tvAndroid"
+        app:layout_constraintStart_toStartOf="@+id/tvAndroid"
+        app:layout_constraintTop_toBottomOf="@+id/tvAndroid"
+        app:srcCompat="@drawable/wartortle" />
+
+</android.support.constraint.ConstraintLayout>
